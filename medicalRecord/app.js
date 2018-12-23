@@ -16,6 +16,10 @@ app.get('/', function(req, res){
     res.send('Hello! welcome to the MedicalRecord Blockchain Dapp!!!')
 })
 
+app.get('/test', function(req, res) {
+    res.sendFile('./index.html', {root: __dirname })
+});
+
 // redireact the call to the app folder acoundingly
 app.post('/contractfunction', function (req, res) {
     console.log("---------------------------------Contract Function  API Started---------------------------------",req.body)
