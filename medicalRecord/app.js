@@ -1,22 +1,18 @@
 const web3 = require('web3');
 const express = require('express');
 const Tx = require('ethereumjs-tx');
-
+var fs = require('fs');
+var http = require('http');
 
 var query = require('./Query/query.js')
 var deploy = require('./Deploy/deployContract.js')
 
-
-const app = express();
-
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 
-app.get('/', function(req, res){
-    res.send('Hello! welcome to the MedicalRecord Blockchain Dapp!!!')
-})
 
-app.get('/test', function(req, res) {
+const app = express();
+app.get('/', function(req, res) {
     res.sendFile('./index.html', {root: __dirname })
 });
 
