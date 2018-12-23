@@ -14,3 +14,15 @@ Please see the below steps that i have followed for this excersize.
 5. Developed the deployContract.js file for the deployment(next time when we want to deploy).
 6. Developed the query.js file to call all the smart contract functions.
 7. Developed the nodejs API to divert the call between frond-end(index.html) file and Blockchain.
+
+
+Due to the time constraint i couldnt really test the entire front and blockchain connection functionality. However the contract is fully tested using REMIX.
+I had to finish this assignment in one day which is quite to difficult to cover the entire stuff in just one day. i have tried my best to cover the maximum technical stuff.
+
+Steps; 
+1. Please clone this repository in your system
+2. go to cd medicalRecord folder
+3. download all the dependencies by using command- npm install
+4. node app.js
+5. to see the front-end development page please open the index.html page. 
+
